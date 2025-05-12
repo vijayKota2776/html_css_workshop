@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Course Registration Form</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <h2>Course Registration Form</h2>
+
+  <form>
+    
+    <fieldset>
+      <legend><strong>Personal Information</strong></legend>
+
+      <label for="fullName">Full Name:</label>
+      <input type="text" id="fullName" placeholder="Enter your full name" required><br><br>
+
+      <label for="email">Email Address:</label>
+      <input type="email" id="email" placeholder="you@example.com"required><br><br>
+
+      <label for="phone">Phone Number:</label>
+      <input type="tel" id="phone" placeholder="10-digit phone number" required><br><br>
+
+      <label>Gender:</label><br>
+      <input type="radio" name="gender" id="male">
+      <label for="male">Male</label><br>
+      <input type="radio" name="gender" id="female">
+      <label for="female">Female</label><br><br>
+
+      <label for="dob">Date of Birth:</label>
+      <input type="date" id="dob" required><br><br>
+    </fieldset>
+
+    <fieldset>
+      <legend><strong>Course Selection</strong></legend>
+
+      <label for="course">Select Course:</label>
+      <select id="course" required>
+        <option>Select a course</option>
+        <option>Python Programming</option>
+        <option>Web Development</option>
+        <option>Data Science</option>
+      </select><br><br>
+
+      <label for="startDate" required>Preferred Start Date:</label>
+      <input type="date" id="startDate"><br><br>
+    </fieldset>
+
+
+    <fieldset>
+      <legend><strong>Upload Documents</strong></legend>
+      <label for="resume" required>Upload Your Resume (PDF/DOCX):</label>
+      <input type="file" id="resume" accept=".pdf,.docx"><br><br>
+    </fieldset>
+
+
+    <fieldset>
+      <legend><strong>Additional Information</strong></legend>
+      <label for="comments" >Comments:</label><br>
+      <textarea id="comments" rows="4" cols="50" placeholder="Any comments or questions"></textarea><br><br>
+    </fieldset>
+
+
+    <fieldset>
+      <legend><strong>Course Overview</strong></legend>
+      <video width="320" height="240" controls>
+        <source src="coding.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video><br><br>
+
+      <label><strong>Course Introduction</strong></label><br>
+      <audio controls>
+        <source src="sad-violin-no-copyright-music-338054.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+      </audio>
+    </fieldset>
+
+
+    <br>
+    <button type="submit">Submit Registration</button>
+    <button type="reset">Reset</button>
+  </form>
+
+  <footer>
+    <p>vijay kota</p>
+  </footer>
+
+</body>
+</html>

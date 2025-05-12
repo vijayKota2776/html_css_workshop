@@ -1,0 +1,68 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    background-color: #f9f9f9;
+  }
+  
+  h2 {
+    text-align: center;
+    color: #003366;
+  }
+  .radio{
+    display: flex;
+  }
+  
+  form {
+    max-width: 800px;
+    margin: auto;
+    background: white;
+    padding: 20px;
+    border: 2px solid #007bff;
+    border-radius: 10px;
+  }
+  
+  fieldset {
+    border: 2px solid #007bff;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+  }
+  
+  legend {
+    color: #0056b3;
+    font-size: 1.1em;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  
+  input, select, textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    margin-right: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  
+  footer {
+    text-align: center;
+    margin-top: 30px;
+    color: #666;
+  }
