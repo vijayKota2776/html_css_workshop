@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>UNO Game</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div id="game">
+    <h1>UNO Game</h1>
+    <div class="board">
+      <div id="cpu-hand" class="hand">CPU Cards: <span id="cpu-count">0</span></div>
+
+      <div class="center">
+        <div id="draw-pile" class="pile">Draw</div>
+        <div id="discard-pile" class="pile">?</div>
+      </div>
+
+      <div id="your-hand" class="hand">Your Cards:</div>
+    </div>
+
+    <p id="message"></p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
