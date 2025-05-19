@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Register - Letsdowngrade</title>
+  <style>
+    :root {
+      --dark-bg: #111;
+      --mid-bg: #1a1a1a;
+      --accent: rgb(5, 243, 239);
+      --accent-light: rgb(5, 243, 239);
+      --text-light: #f1f1f1;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: var(--dark-bg);
+      color: var(--text-light);
+    }
+
+    .container {
+      max-width: 700px;
+      margin: 40px auto;
+      padding: 20px;
+      background-color: var(--mid-bg);
+      border-radius: 12px;
+      box-shadow: 0 0 10px rgb(5, 243, 239);
+    }
+
+    h1 {
+      text-align: center;
+      color: var(--accent);
+      margin-bottom: 30px;
+    }
+
+    fieldset {
+      border: 1px solid var(--accent);
+      border-radius: 8px;
+      padding: 20px;
+      margin-bottom: 20px;
+    }
+
+    legend {
+      font-weight: bold;
+      color: var(--accent);
+      padding: 0 10px;
+    }
+
+    label {
+      display: block;
+      margin: 15px 0 5px;
+    }
+
+    input, select, textarea {
+      width: 100%;
+      padding: 10px;
+      border-radius: 6px;
+      border: none;
+      background-color: #262626;
+      color: var(--text-light);
+    }
+
+    input:focus, select:focus, textarea:focus {
+      outline: 2px solid var(--accent);
+    }
+
+    button {
+      background-color: var(--accent);
+      border: none;
+      padding: 12px 20px;
+      border-radius: 8px;
+      color: black;
+      font-weight: bold;
+      cursor: pointer;
+      display: block;
+      margin: 20px auto 0;
+    }
+
+    button:hover {
+      background-color: var(--accent-light);
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <h1>Registration Form</h1>
+    <form action="index.html" method="post" novalidate onsubmit="return validateForm()">
+      <fieldset>
+        <legend>Personal Information</legend>
+
+        <label for="fullname">Full Name:</label>
+        <input type="text" id="fullname" name="fullname" pattern="[A-Za-z\s]{3,}" title="Minimum 3 letters. Letters and spaces only." required />
+
+        <label for="email">Email Address:</label>
+        <input type="email" id="email" name="email" required />
+
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob" name="dob" required />
+      </fieldset>
+
+      <fieldset>
+        <legend>Education & Course Preferences</legend>
+
+        <label for="course">Preferred Course:</label>
+        <select id="course" name="course" required>
+          <option value="">Choose one</option>
+          <option value="web">Web Development</option>
+          <option value="data">Data Science</option>
+          <option value="ai">Artificial Intelligence</option>
+          <option value="design">UI/UX Design</option>
+        </select>
+      </fieldset>
+
+      <fieldset>
+        <legend>Additional Details</legend>
+
+        <label for="comments">Why do you want to join LearnHub?</label>
+        <textarea id="comments" name="comments" rows="4" required></textarea>
+      </fieldset>
+
+      <button type="submit">Register</button>
+    </form>
+  </div>
+
+  <script>
+    function validateForm() {
+      const fullname = document.getElementById('fullname').value.trim();
+      const email = document.getElementById('email').value.trim();
+      const dob = document.getElementById('dob').value;
+      const course = document.getElementById('course').value;
+      const comments = document.getElementById('comments').value.trim();
+
+      const namePattern = /^[A-Za-z\s]{3,}$/;
+      if (!namePattern.test(fullname)) {
+        alert('Please enter a valid full name (min 3 letters, letters and spaces only).');
+        return false;
+      }
+
+      if (!email.includes('@') || !email.includes('.')) {
+        alert('Please enter a valid email address.');
+        return false;
+      }
+
+      const today = new Date().toISOString().split('T')[0];
+      if (!dob || dob >= today) {
+        alert('Please enter a valid date of birth.');
+        return false;
+      }
+
+      if (course === '') {
+        alert('Please select a preferred course.');
+        return false;
+      }
+
+      if (comments.length < 10) {
+        alert('Please tell us why you want to join LearnHub (minimum 10 characters).');
+        return false;
+      }
+
+
+      alert('Registration successful! Thank you for registering with Letsdowngrade.');
+
+      return true; 
+    }
+  </script>
+
+</body>
+</html>
