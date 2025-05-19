@@ -1,0 +1,193 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background: #333;
+    color: #f4f7f9;
+}
+
+
+.main-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #1e1e2f;
+    color: rgb(5, 243, 239);
+    padding: 20px 40px;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+    align-items: center;
+}
+
+.nav-links a {
+    color: rgb(5, 243, 239);
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: white;
+}
+
+.btn {
+    background-color: black;
+    color: rgb(5, 243, 239);
+    padding: 8px 16px;
+    border: 2px solid rgb(5, 243, 239);
+    border-radius: 5px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.btn:hover {
+    background-color: black;
+    color: white;
+    border: 2px solid rgb(5, 243, 239);
+    transform: scale(1.1);
+}
+.btn1 {
+  background-color: black;
+  color: rgb(5, 243, 239);
+  padding: 8px 16px;
+  border: 2px solid rgb(5, 243, 239);
+  border-radius: 5px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  width: 130px;
+}
+
+.btn1:hover {
+  background-color: black;
+  color: white;
+  border: 2px solid rgb(5, 243, 239);
+  transform: scale(1.1);
+}
+section{
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 40px 20px;
+    gap: 50px;
+}
+
+  .footer-section {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  
+  .footer-section h3 {
+    font-size: 16px;
+    margin-bottom: 15px;
+    font-weight: bold;
+  }
+  
+  .footer-section ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .footer-section ul li {
+    margin-bottom: 8px;
+    font-size: 14px;
+  }
+  
+  .footer-section ul li a {
+    text-decoration: none;
+    color: #333;
+  }
+  
+  .footer-section ul li a:hover {
+    text-decoration: underline;
+  }
+  
+  .logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: rgb(5, 243, 239);
+}
+  
+  .tagline {
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  .desc {
+    font-size: 14px;
+    margin-bottom: 10px;
+    display: flex;
+    flex-wrap: weap;
+  }
+  
+  .social-icons a img {
+    width: 20px;
+    margin-right: 10px;
+    vertical-align: middle;
+    gap: 100px;
+  }
+
+
+  .bi-instagram {
+    color: #E1306C;
+    transition: transform 0.2s ease;
+  }
+
+  .bi-instagram:hover {
+    transform: scale(1.2);
+  }
+
+  .bi-youtube {
+    color: red;
+    transition: transform 0.2s ease;
+  }
+
+  .bi-youtube:hover {
+    transform: scale(1.2);
+  }
+  .bi-x {
+    color: black;
+    transition: transform 0.2s ease;
+  }
+
+  .bi-x:hover {
+    transform: scale(1.2);
+  }
+  .bi-facebook {
+    color: blue;
+    transition: transform 0.2s ease;
+  }
+
+  .bi-facebook:hover {
+    transform: scale(1.2);
+  }
+  .bi-linkedin {
+    color: blue;
+    transition: transform 0.2s ease;
+  }
+
+  .bi-linkedin:hover {
+    transform: scale(1.2);
+  }
+  .bi-discord {
+    color: blue;
+    transition: transform 0.2s ease;
+  }
+
+  .bi-discord:hover {
+    transform: scale(1.2);
+  }
