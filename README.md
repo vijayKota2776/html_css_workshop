@@ -5,11 +5,11 @@ This repository contains hands-on examples, daily practice exercises, and projec
 
 ---
 
-## 📚 Workshop Outline
-html_css_workshop/
-├── day1/
-├── day2/
-├── day3/  
+## 📚 Workshop Outline<br>
+html_css_workshop/<br>
+├── day1/<br>
+├── day2/<br>
+├── day3/<br>
 
 ---
 
